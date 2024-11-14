@@ -24,6 +24,12 @@ class ImageCopy
 
     public function copyImages()
     {
+        $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/adithyan.log');
+        $logger = new \Zend_Log();
+        $logger->addWriter($writer);
+        $logger->info("copy image script executing........");
+
+
         $mediaDir = $this->directoryList->getPath(DirectoryList::MEDIA) . '/pre-order/';
         $sourceDir = __DIR__ . '/../../../media/';
         
