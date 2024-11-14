@@ -31,8 +31,8 @@ class ImageCopy
 
 
         $mediaDir = $this->directoryList->getPath(DirectoryList::MEDIA) . '/pre-order/';
-        $sourceDir = __DIR__ . '/../../../media/';
-        
+        $sourceDir = __DIR__ . '/../../media/';
+        $logger->info("source dir: " . $sourceDir);
         if (!$this->fileIo->isDirectory($mediaDir)) {
             $this->fileIo->mkdir($mediaDir, 0777, true); // Create the destination directory if it doesn't exist
         }
