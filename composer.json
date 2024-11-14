@@ -22,7 +22,11 @@
     "map": [
       [
         "media/*",
-        "pub/media"
+        ""
+      ],
+      [
+        "media/*",
+        "pub"
       ]
     ]
   }
