@@ -1,0 +1,26 @@
+{
+    "name": "adithyanrdas/transfer-media",
+    "description": "This extension copy images from src folder to project pub/media folder after composer install.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0",
+        "ext-curl": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Adithyan\\TransferMedia\\Setup\\Script\\ImageCopy::copyImages"
+        ]
+    },
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Adithyan\\TransferMedia\\": ""
+        }
+    }
+}
