@@ -19,15 +19,8 @@
     }
   },
   "extra": {
-    "map": [
-      [
-        "media/*",
-        ""
-      ],
-      [
-        "media/*",
-        "pub"
-      ]
-    ]
-  }
+        "map": [
+            ["media", "pub/media"]
+        ]
+    }
 }
